@@ -1,5 +1,11 @@
 const schema = `
 
+type Listing @key(fields: ID) {
+     ID: Int!
+     listingName: String
+     guide: String
+     prize: String 
+}
 
 
 """
@@ -11,4 +17,4 @@ type Query {
 
 `
 
-export {schema}
+export { schema }
