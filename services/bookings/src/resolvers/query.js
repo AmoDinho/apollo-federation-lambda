@@ -22,5 +22,5 @@ export const GetBookings = (args, context) => {
         size: 7
     }
     ]
-    return null
+    return bookings
 }
