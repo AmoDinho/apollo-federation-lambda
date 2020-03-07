@@ -1,6 +1,6 @@
-const schema = `
+const typeDefs = `
 
-type Listing @key(fields: ID) {
+type Listing @key(fields: "ID") {
      ID: Int!
      listingName: String
      guide: String
@@ -11,11 +11,11 @@ type Listing @key(fields: ID) {
 """
 A hello world Query
 """
-type Query {
+extend type Query {
      hello: String!
      getListings: [Listing]
 }
 
 `
 
-export { schema }
+export { typeDefs }
