@@ -1,8 +1,8 @@
-import { hello, GetBookings } from "./query";
+import { hello, getBookings } from "./query";
 
 export const resolvers = {
     Query: {
         hello: (root, args, context) => hello(args, context),
-        GetBookings: (root, args, context) => GetBookings(args, context)
+        getBookings: (root, args, context) => getBookings(args, context)
     }
 }
