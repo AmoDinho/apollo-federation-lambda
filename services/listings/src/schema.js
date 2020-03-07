@@ -13,6 +13,7 @@ A hello world Query
 """
 type Query {
      hello: String!
+     getListings: [Listing]
 }
 
 `
